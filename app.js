@@ -26,6 +26,7 @@ function generateTodo (todo,index){
 function statee(e,index){
     //console.log(index +" "+ e.target.checked)
   todos[index].completed=e.target.checked
+  saveToLocalStorage()
   renderTodos(todos)
 }
 
@@ -38,7 +39,7 @@ function renderTodos (_todos) {
     console.log(hideCompleted)
     _todos.forEach((todo,index) => {        
         if (hideCompleted && todo.completed){
-                        
+
         }
         else
             document.querySelector('#todos').appendChild(generateTodo(todo,index))      
