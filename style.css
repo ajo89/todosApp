@@ -1,0 +1,6 @@
+
+ol li.done {
+    color: green;    
+    text-decoration: line-through;
+    font-style: italic;
+  }
